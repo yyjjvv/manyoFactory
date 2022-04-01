@@ -1,0 +1,242 @@
+@charset "utf-8";
+/*Visual Slider*/
+#visual {
+	width: 100%;
+	min-width: 1366px;
+	height: 700px;
+	margin-top: 90px;
+	position: relative;
+}
+#visual .slider {
+	width: 100%;
+	height: 700px;
+	position: relative;
+}
+.swiper-slide {
+	width: 100%;
+	height: 700px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+}
+.slide_2 {
+	background-image: url(../images/visual_2.jpg);
+}
+.slide_3 {
+	background-image: url(../images/visual_3.jpg);
+}
+.slide_4 {
+	background-image: url(../images/visual_4.jpg);
+}
+.next,
+.prev {
+	color: rgba(255, 255, 255, 0.5);
+}
+.page .swiper-pagination-bullet {
+	background: rgba(0, 0, 0, 0.5);
+}
+.page .swiper-pagination-bullet-active {
+	background: #fff;
+}
+.next:hover,
+.prev:hover {
+	color: #fff;
+}
+#visual .vis_txt {
+	position: absolute;
+}
+#visual .slide2_txt {
+	left: 115px;
+	top: 240px;
+}
+#visual .slide2_txt h2 {
+	font-size: 36px;
+	color: var(--txt_body1);
+	width: 300px;
+	font-weight: 900;
+	line-height: 1.5;
+}
+#visual .slide2_txt p {
+	font-size: 24px;
+	color: #fff;
+	font-weight: 400;
+	margin-top: 30px;
+}
+#visual .slide3_txt {
+	left: 203px;
+	top: 340px;
+}
+#visual .slide3_txt h2 {
+	font-size: 60px;
+	font-weight: 900;
+	color: #fff;
+	margin-bottom: 30px;
+}
+#visual .slide3_txt p {
+	font-size: 30px;
+	font-weight: 700;
+	color: var(--txt_body1);
+	margin-bottom: 10px;
+}
+#visual .slide4_txt {
+	left: 40px;
+	top: 240px;
+}
+#visual .slide4_txt h2 {
+	font-size: 36px;
+	color: var(--txt_body1);
+	width: 350px;
+	font-weight: 900;
+	line-height: 1.5;
+}
+#visual .slide4_txt p {
+	font-size: 24px;
+	color: var(--best);
+	font-weight: 400;
+	margin-top: 30px;
+}
+
+/*Contents_MD's Pick*/
+#contents .section {
+	padding: 100px 0;
+	position: relative;
+}
+#contents .section h3 {
+	font-size: 30px;
+	font-weight: 900;
+	margin-bottom: 80px;
+}
+.md li {
+	float: left;
+	width: 319px;
+	margin-right: 30px;
+	margin-bottom: 60px;
+	position: relative;
+}
+.md li:nth-child(4n) {
+	margin-right: 0px;
+}
+.md li:nth-child(5),
+.md li:nth-child(6),
+.md li:nth-child(7),
+.md li:nth-child(8) {
+	margin-bottom: 0px;
+}
+.md li .md_top {
+	position: relative;
+	margin-bottom: 30px;
+}
+.md li .md_img {
+	width: 319px;
+	height: 319px;
+	border-radius: 100px;
+	overflow: hidden;
+}
+.md li .md_img img {
+	transition: 0.5s;
+}
+.md li .md_img:hover img {
+	transform: scale(1.05);
+}
+
+/*Contents_New*/
+.new {
+	background-color: #fff4d6;
+}
+.new h3 {
+	transform: rotate(-90deg);
+	display: inline-block;
+	margin-left: 203px;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+.new .n_list {
+	float: right;
+}
+.new .n_list li {
+	float: left;
+	margin-left: 30px;
+}
+.new .n_img {
+	margin-bottom: 30px;
+}
+.new .n_des {
+	position: relative;
+}
+.new .n_des .n_hrt {
+	top: 0;
+}
+.new .n_hash {
+	color: var(--main);
+}
+.new .n_price {
+	margin-bottom: 0px;
+	color: var(--txt_body1);
+}
+
+/*Contents_Brand*/
+.brand {
+	margin-bottom: 100px;
+}
+.brand h3,
+.brand .brd_btn {
+	margin-left: 203px;
+}
+.brand .brd_btn label {
+	display: block;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+.brand .video_list {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.brand input,
+.tab_vid li {
+	display: none;
+}
+.brand .video_list li iframe {
+	border: 0;
+}
+.brand input:nth-of-type(1):checked ~ .tab_vid li:nth-of-type(1),
+.brand input:nth-of-type(2):checked ~ .tab_vid li:nth-of-type(2),
+.brand input:nth-of-type(3):checked ~ .tab_vid li:nth-of-type(3),
+.brand input:nth-of-type(4):checked ~ .tab_vid li:nth-of-type(4),
+.brand input:nth-of-type(5):checked ~ .tab_vid li:nth-of-type(5),
+.brand input:nth-of-type(6):checked ~ .tab_vid li:nth-of-type(6) {
+	display: block;
+}
+
+.brand input:nth-of-type(1):checked ~ .brd_btn label:nth-of-type(1),
+.brand input:nth-of-type(2):checked ~ .brd_btn label:nth-of-type(2),
+.brand input:nth-of-type(3):checked ~ .brd_btn label:nth-of-type(3),
+.brand input:nth-of-type(4):checked ~ .brd_btn label:nth-of-type(4),
+.brand input:nth-of-type(5):checked ~ .brd_btn label:nth-of-type(5),
+.brand input:nth-of-type(6):checked ~ .brd_btn label:nth-of-type(6) {
+	font-weight: 700;
+}
+
+/*Contents_mLab*/
+.mlab li {
+	float: left;
+	position: relative;
+	margin-right: 29px;
+}
+.mlab li:nth-of-type(2n) {
+	margin-right: 0px;
+}
+.mlab li:nth-of-type(2) {
+	margin-bottom: 24px;
+}
+.mlab li img {
+	display: block;
+}
+.mlab li h4 {
+	position: absolute;
+	left: 20px;
+	bottom: 25px;
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 150%;
+}

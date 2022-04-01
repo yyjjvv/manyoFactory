@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마녀공장</title>
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="style/all.css" type="text/css">
+    <link rel="stylesheet" href="style/common.css" type="text/css">
+    <link rel="stylesheet" href="style/detail.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="js/detail.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header" class="shadow">
+            <div class="in">
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="마녀공장">
+                    </a>
+                </h1>
+                <nav class="nav">
+                    <h2 class="hide">Main Navigation</h2>
+                    <ul class="gnb cl">
+                        <li class="prd">
+                            <a href="#">Product</a>
+                            <div class="lnb prd_lnb cl">
+                                <ul class="lnb_list">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="sub.html">NEW</a></li>
+                                    <li><a href="#">BEST</a></li>
+                                    <li class="sale"><a href="#">SALE</a></li>
+                                    <li><a href="#">BRAND</a></li>
+                                </ul>
+                                <ul class="lnb_list">
+                                    <li class="lnb_tit"><strong>유형별</strong></li>
+                                    <li><a href="#">클렌징</a></li>
+                                    <li><a href="#">스킨케어</a></li>
+                                    <li><a href="#">마스크/팩</a></li>
+                                    <li><a href="#">베이스메이크업</a></li>
+                                    <li><a href="#">향수/디퓨져</a></li>
+                                    <li><a href="#">라이프스타일</a></li>
+                                    <li><a href="#">미용소품</a></li>
+                                </ul>
+                                <ul class="lnb_list">
+                                    <li class="lnb_tit"><strong>라인별</strong></li>
+                                    <li><a href="#">미백</a></li>
+                                    <li><a href="#">주름탄력</a></li>
+                                    <li><a href="#">수분보습</a></li>
+                                    <li><a href="#">트러블</a></li>
+                                    <li><a href="#">장벽강화</a></li>
+                                    <li><a href="#">모공피지</a></li>
+                                    <li><a href="#">수부지</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Event</a></li>
+                        <li><a href="#">Review</a></li>
+                        <li><a href="#">m:Lab</a></li>
+                        <li class="cs">
+                            <a href="#">CS Center</a>
+                            <ul class="lnb cs_lnb">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Q&A</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="hdr_r cl">
+                    <div class="hdr_icon">
+                        <a href="#" class="search"><img src="images/hd_search.png" alt="검색" class="search"></a>
+                        <div class="srch_win">
+                            <form action="#">
+                                <fieldset>
+                                    <legend class="hide">검색어 입력</legend>
+                                    <label for="search" class="hide">검색어 입력</label>
+                                    <input type="text" title="검색어 입력" placeholder="퓨어 클렌징 오일" id="search">
+                                    <button class="btn_srch">
+                                        <span class="hide">검색</span>
+                                        <span class="icon_srch"><img src="images/hd_search.png" alt="검색" class="search"></span>
+                                    </button>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="hdr_icon">
+                        <a href="#" class="filter"><img src="images/hd_filter.png" alt="필터"></a>
+                        <div class="filter_win">
+                            <ul class="filter_list filter_b cl">
+                                <li class="filter_tit"><strong>브랜드</strong></li>
+                                <li><a href="#">마녀공장</a></li>
+                                <li><a href="#">자오담</a></li>
+                                <li><a href="#">바닐라부띠끄</a></li>
+                                <li><a href="#">100봄</a></li>
+                                <li><a href="#">노머시</a></li>
+                                <li><a href="#">아워비건</a></li>
+                            </ul>
+                            <ul class="filter_list filter_c cl">
+                                <li class="filter_tit"><strong>유형별</strong></li>
+                                <li><a href="#">클렌징</a></li>
+                                <li><a href="#">스킨케어</a></li>
+                                <li><a href="#">마스크/팩</a></li>
+                                <li><a href="#">베이스메이크업</a></li>
+                                <li><a href="#">향수/디퓨져</a></li>
+                                <li><a href="#">라이프스타일</a></li>
+                                <li><a href="#">미용소품</a></li>
+                            </ul>
+                            <ul class="filter_list filter_l cl">
+                                <li class="filter_tit"><strong>라인별</strong></li>
+                                <li><a href="#">미백</a></li>
+                                <li><a href="#">주름탄력</a></li>
+                                <li><a href="#">수분보습</a></li>
+                                <li><a href="#">트러블</a></li>
+                                <li><a href="#">장벽강화</a></li>
+                                <li><a href="#">모공피지</a></li>
+                                <li><a href="#">수부지</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="hdr_icon">
+                        <a href="#"><img src="images/hd_mypage.png" alt="로그인/마이페이지"></a>
+                    </div>
+                    <div class="hdr_icon">
+                        <a href="#" class="shopping_b"><img src="images/hd_shopping_bag.png" alt="쇼핑백"></a>
+                        <div class="sb_win">
+                            <p><strong>장바구니</strong></p>
+                            <p>!</p>
+                            <p>장바구니가 비어있습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main id="contents">
+            <section class="section purchase">
+                <div class="in">
+                    <ul class="pur_l">
+                        <li class="img_tab img_tab1">
+                            <p class="s_pic"><img src="images/pure/pure_cleansing_oil_1s.jpg" alt="Pure Clensing Oil"></p>
+                            <p class="b_pic"><img src="images/pure/pure_cleansing_oil_1.jpg" alt="Pure Clensing Oil"></p>
+                        </li>
+                        <li class="img_tab img_tab2">
+                            <p class="s_pic"><img src="images/pure/pure_cleansing_oil_2s.jpeg" alt="Pure Clensing Oil"></p>
+                            <p class="b_pic"><img src="images/pure/pure_cleansing_oil_2.jpeg" alt="Pure Clensing Oil"></p>
+                        </li>
+                        <li class="img_tab img_tab3">
+                            <p class="s_pic"><img src="images/pure/pure_cleansing_oil_3s.jpeg" alt="Pure Clensing Oil"></p>
+                            <p class="b_pic"><img src="images/pure/pure_cleansing_oil_3.jpeg" alt="Pure Clensing Oil"></p>
+                        </li>
+                    </ul>
+                    <div class="pur_r">
+                        <ul class="pur_txt">
+                            <li class="pur_tit">
+                                <h3 class="prd_name">퓨어 클렌징 오일 400ml</h3>
+                                <p class="prd_sum">영양, 보습 가득한 딥 클렌징</p>
+                                <p class="prd_price">24,500원<small>49,000원</small><span>50%</span></p>
+                            </li>
+                            <li class="pur_info">
+                                <ul>
+                                    <li>
+                                        <p>전성분</p>
+                                        <p><b><a href="#">보러가기 ></a></b></p>
+                                    </li>
+                                    <li>
+                                        <p>용량</p>
+                                        <p>400ml</p>
+                                    </li>
+                                    <li>
+                                        <p>제조일자</p>
+                                        <p>2020.12.22 제조</p>
+                                    </li>
+                                    <li>
+                                        <p>사용기한</p>
+                                        <p>제조일로부터 2년, 개봉 후 1년</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="pur_buy">
+                                <div class="delivery">
+                                    <p><span class="today"><b>오늘 출발</b></span><span>오전 2시 이전 구매 시 (영업일 기준 / 주문 물량에 따라 변동 가능)</span></p>
+                                </div>
+                                <div class="quan_price">
+                                    <div class="prd_quan cl">
+                                        <form action="#">
+                                            <label for="quantity" class="hide">상품 구매 개수</label>
+                                            <button type="button" class="btn_minus">-</button>
+                                            <input type="text" value="1" id="quantity">
+                                            <button type="button" class="btn_plus">+</button>
+                                        </form>
+                                    </div>
+                                    <p class="tot_price">총 상품금액<span>24,500원</span></p>
+                                </div>
+                                <div class="pur_btn">
+                                    <button type="submit" id="addCart">장바구니</button>
+                                    <button type="submit" id="buy">바로구매</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="section prd_des">
+                <ul class="tab_nav">
+                    <li>상세정보</li>
+                    <li><i class="fa-solid fa-star"></i> 4.8 | 리뷰 3,314</li>
+                    <li>문의 129</li>
+                </ul>
+                <ul class="tab_cont">
+                    <li class="des_menu prd_detail">
+                        <div class="detail_img">
+                            <img src="images/pure/pure_detail_1.jpeg" alt="퓨어클렌징오일 디테일">
+                            <video src="images/pure/pure_detail_3.mp4" loop muted autoplay width="960" height="1700"></video>
+                            <img src="images/pure/pure_detail_4.jpeg" alt="퓨어클렌징오일 디테일">
+                        </div>
+                    </li>
+                    <li class="des_menu customer_review">
+                        <h4>퓨어 클렌징 오일 400ml</h4>
+                        <ul class="review_list">
+                            <li>
+                                <p class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><small>dfs***</small></p>
+                                <p>순해서 좋아요~~~</p>
+                            </li>
+                            <li>
+                                <p class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><small>xdr***</small></p>
+                                <p>피부가 깨끗해졌어요.</p>
+                            </li>
+                            <li>
+                                <p class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><small>qwe***</small></p>
+                                <p>3통째 쓰는 중이에요. 너무 좋습니다.</p>
+                            </li>
+                            <li>
+                                <p class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><small>poa***</small></p>
+                                <p>순하고 잘 지워져요.</p>
+                            </li>
+                            <li>
+                                <p class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><small>bsu***</small></p>
+                                <p>블랙헤드가 많이 나아졌어요</p>
+                            </li>
+                            <li>
+                                <p class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><small>gds***</small></p>
+                                <p>좋은 가격에 구매했어요</p>
+                            </li>
+                            <li>
+                                <p class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><small>ffs***</small></p>
+                                <p>앞으로도 계속해서 사용할 예정이에요</p>
+                            </li>
+                            <li>
+                                <p class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><small>sty***</small></p>
+                                <p>블랙헤드가 사라지길 기대해보야요!</p>
+                            </li>
+                            <li>
+                                <p class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><small>dma***</small></p>
+                                <p>자극이 적어서 너무 좋네요</p>
+                            </li>
+                            <li>
+                                <p class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><small>pdv***</small></p>
+                                <p>다 써서 새로 구매했어요! 효과가 너무 좋아요</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="des_menu question">
+                        <div class="q_btn cl">
+                            <button type="button">문의하기</button>
+                        </div>
+                        <ul class="q_list">
+                            <li>
+                                <p class="secret"><i class="fa-solid fa-lock"></i>비밀글입니다<small>dfs***</small></p>
+                                <p class="complete">답변완료</p>
+                            </li>
+                            <li>
+                                <p class="secret"><i class="fa-solid fa-lock"></i>비밀글입니다<small>pkd***</small></p>
+                                <p class="complete">답변완료</p>
+                            </li>
+                            <li>
+                                <p class="secret"><i class="fa-solid fa-lock"></i>비밀글입니다<small>mds***</small></p>
+                                <p class="complete">답변완료</p>
+                            </li>
+                            <li>
+                                <p class="secret"><i class="fa-solid fa-lock"></i>비밀글입니다<small>ans***</small></p>
+                                <p class="complete">답변완료</p>
+                            </li>
+                            <li>
+                                <p class="secret"><i class="fa-solid fa-lock"></i>비밀글입니다<small>tre***</small></p>
+                                <p class="complete">답변완료</p>
+                            </li>
+                            <li>
+                                <p class="secret"><i class="fa-solid fa-lock"></i>비밀글입니다<small>dfs***</small></p>
+                                <p class="complete">답변완료</p>
+                            </li>
+                            <li>
+                                <p class="secret"><i class="fa-solid fa-lock"></i>비밀글입니다<small>dbfg***</small></p>
+                                <p class="complete">답변완료</p>
+                            </li>
+                            <li>
+                                <p class="secret"><i class="fa-solid fa-lock"></i>비밀글입니다<small>khg***</small></p>
+                                <p class="complete">답변완료</p>
+                            </li>
+                            <li>
+                                <p class="secret"><i class="fa-solid fa-lock"></i>비밀글입니다<small>yoo***</small></p>
+                                <p class="complete">답변완료</p>
+                            </li>
+                            <li>
+                                <p class="secret"><i class="fa-solid fa-lock"></i>비밀글입니다<small>kim***</small></p>
+                                <p class="complete">답변완료</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section class="section notice">
+                <div class="notice_wrap">
+                    <ul class="notice_list">
+                        <li class="notice_menu notice1">
+                            <div>
+                                <h4>상품 정보 제공 고시</h4>
+                                <span class="list_open">+</span>
+                            </div>
+                            <ul class="accordion">
+                                <li>
+                                    <p><b>용량</b></p>
+                                    <p>400ml</p>
+                                </li>
+                                <li>
+                                    <p><b>제품 주요사항</b></p>
+                                    <p>모든 피부용</p>
+                                </li>
+                                <li>
+                                    <p><b>제조일자</b></p>
+                                    <p>2020. 12. 22 제조</p>
+                                </li>
+                                <li>
+                                    <p><b>사용방법</b></p>
+                                    <p>적당량을 펌핑하여 마른 얼굴 전체에 펴발라 부드럽게 마사지한 후 손에 약간의 물을 묻혀 30초 정도 다시 마사지(오일이 우윳빛으로 변하는 유화과정)하여 미온수로 깨끗이 헹궈냅니다.</p>
+                                </li>
+                                <li>
+                                    <p><b>사용기한</b></p>
+                                    <p>제조일로부터 2년, 개봉 후 1년</p>
+                                </li>
+                                <li>
+                                    <p><b>제조국 / 제조자</b></p>
+                                    <p>대한민국 / (주)클라젠</p>
+                                </li>
+                                <li>
+                                    <p><b>기능성 유무</b></p>
+                                    <p>해당 사항 없음</p>
+                                </li>
+                                <li>
+                                    <p><b>사용 시 주의사항</b></p>
+                                    <p>1. 화장품 사용 시 또는 사용 후 직사광선에 의하여 사용부위가 붉은 반점, 부어오름 또는 가려움증 등의 이상 증상이나 부작용이 있는 경우 전문의 등과 상담할 것 2. 상처가 있는 부위 등에는 사용을 자제할 것 3. 보관 및 취급 시의 주의사항 가) 어린이의 손이 닿지 않는 곳에 보관할 것 나) 직사광선을 피해서 보관할 것 4. 눈에 들어갔을 때에는 즉시 씻어낼 것</p>
+                                </li>
+                                <li>
+                                    <p><b>품질보증기준</b></p>
+                                    <p>본 상품에 이상이 있을 경우 공정거래위원회 고시 소비자 분쟁해결 기준에 따라 교환 및 환불을 받을 수 있습니다.</p>
+                                </li>
+                                <li>
+                                    <p><b>고객센터 연락처</b></p>
+                                    <p>02-6013-0855</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="notice_menu notice2">
+                            <div>
+                                <h4>배송안내</h4>
+                                <span class="list_open">+</span>
+                            </div>
+                            <ul class="accordion">
+                                <li>
+                                    <p><b>배송업체</b></p>
+                                    <p>CJ대한통운</p>
+                                </li>
+                                <li>
+                                    <p><b>배송비</b></p>
+                                    <ul>
+                                        <li>2,500원 (단, 실결제금액 2만원 이상은 무료배송)</li>
+                                        <li>* 배송비는 한번에 결제하신 동일 주문번호, 동일 배송지 기준으로 부과됩니다.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p><b>배송안내</b></p>
+                                    <ul class="list_square">
+                                        <li>영업일 기준 오후 2시 이전 입금 확인분에 한해 당일 출고됩니다.(주말 및 월, 화 주문건 제외)</li>
+                                        <li>월요일, 화요일 주문건은 주말 배송물량이 많아 주문일로부터 1~2일내 순차 출고 됩니다.</li>
+                                        <li>이벤트 진행으로 주문건 증가 시 모든 주문건 순차적으로 출고됩니다.</li>
+                                        <li>결제 완료 후 평일 기준 평균 2~3일정도 이내에 배송되며 (산간지역 제외), 주말/공휴일/명절 연휴가 포함되거나 택배사 사정으로 인해 배송소요 시일은 달라질 수 있습니다.</li>
+                                        <li>제품 발송이 진행된 이후에는 교환/취소/주소 변경이 어려우며, 발송 후 변경사항이 있을 경우에는 왕복 택배비는 5,000원이 발생됩니다.</li>
+                                        <li>주문 접수 후 1일 이내에 입금이 확인되지 않는 경우 자동으로 주문취소가 됩니다.</li>
+                                        <li>샘플북과 일반 주문건의 합배송은 어렵습니다.</li>
+                                        <li>사은품 변경 및 샘플 임의 추가는 어려운 점 양해 부탁드립니다.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="notice_menu notice3">
+                            <div>
+                                <h4>교환·반품·배송정보</h4>
+                                <span class="list_open">+</span>
+                            </div>
+                            <ul class="accordion">
+                                <li>
+                                    <p><b>교환/환불절차</b></p>
+                                    <ul>
+                                        <li>1. 마녀공장 고객센터나 홈페이지 1:1문의 게시판을 통해 접수</li>
+                                        <li>2. 당사로부터 전화 답신이나 게시판 답변을 확인 (비용, 주소, 방법 및 절차 등을 안내)</li>
+                                        <li>3. 반품접수 후 영업일 기준 2~3일 이내에 자사 지정 택배기사님이 직접 방문 수거</li>
+                                        <li>4. 제품 도착 후 마녀공장 환불 규정에 따라 7일 이내 순차적 처리됩니다.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p><b>환불방법</b></p>
+                                    <ul class="list_square">
+                                        <li class="list_none">반품 및 환불 접수된 상품이 정상적으로 회수 완료된 경우 아래와 같은 절차로 처리됩니다.</li>
+                                        <li>무통장입금 : 고객님께서 남겨주신 계좌로 입금해드립니다.</li>
+                                        <li>신용카드 결제 : 카드 결제 취소처리 해드리며, 처리 완료 후 카드사 사정에 따라 3~7일 후 승인취소 확인 될 수 있습니다.(취소 내역 확인은 이용하신 카드사로 문의주시면 정확한 안내 받으실 수 있습니다.)</li>
+                                        <li>적립금 결제 : 고객님 아이디의 적립금으로 환원됩니다.</li>
+                                        <li>휴대폰 결제 : 결제 달 이내라면 결제 취소처리 가능하나, 다음 달로 넘어가게되는 경우 휴대폰 요금이 이미 납부처리되어 승인취소가 불가하여 남겨주시는 계좌로 입금해드립니다.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p><b>반품/교환 철회</b></p>
+                                    <p>교환, 반품을 요청하였으나 철회하고자 할 경우에는 당사 고객센터(02-6013-0855)나 1:1문의게시판으로 문의해주시면 신속하게 처리해드립니다.</p>
+                                </li>
+                                <li>
+                                    <p><b>반품/교환<br>가능 시점</b></p>
+                                    <ul class="list_square">
+                                        <li class="list_none">반품 및 환불 접수된 상품이 정상적으로 회수 완료된 경우 아래와 같은 절차로 처리됩니다.</li>
+                                        <li>상품을 사용하지 않았거나 포장을 훼손하지 않은 경우, 7일 이내에 반품 신청 가능합니다.</li>
+                                        <li>상품 파손 및 오배송의 경우</li>
+                                        <li>제품 사용 후 부작용이 생긴 경우</li>
+                                        <li>내용물이 2/3이상 남은 경우에 한해, 증상이 나타난 사진이나 진단서 첨부 시 (진료비 및 약제등은 지원되지 않습니다.)</li>
+                                        <li>상품 불량 및 트러블로인한 교환 및 반품(환불)은 전자상거래법에 의거, 주문 날짜로부터 30일이 지나면 반품 및 환불이 불가능합니다.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p><b>반품/교환<br>불가 사유</b></p>
+                                    <ul class="list_square">
+                                        <li>제품 포장 손상 또는 개봉 및 사용한 경우</li>
+                                        <li>배송일로 부터 7일이 경과된 경우</li>
+                                        <li>마녀공장 공식 판매처에서 구입한 제품이 아니거나, 구매내역이 확인되지 않는 경우(공식판매처의 경우, 소비자 상담관련 전화번호가 마녀공장 대표번호 02-6013-0855로 확인됩니다.)</li>
+                                        <li>고객님의 부주의로 제품이 파손 및 손상된 경우</li>
+                                        <li>제품 파손 및 손상이 없는 화장소품은 불가</li>
+                                        <li>제품의 겉포장이 손상되거나 분실한 경우</li>
+                                        <li>부작용으로 인한 교환 및 반품 요청 시 피부과 진단서가 제출되지 않은 경우</li>
+                                        <li>부작용으로 인한 교환 및 반품 요청 시 배송일로 부터 20일이 지난 경우</li>
+                                        <li>왕복 배송비 5,000원이 동봉되지 않은 경우</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p><b>반품/교환 택배비</b></p>
+                                    <ul>
+                                        <li>반품/교환 또는 무료배송 시 왕복 배송비 5,000원</li>
+                                        <li>상품 불량 및 오배송 등의 이유로 반품하실 경우, 반품 배송비는 무료입니다.</li>
+                                        <li>단순변심 및 고객님의 사정으로 반품/교환 하실 경우 배송비는 고객님 부담입니다.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p><b>신청방법</b></p>
+                                    <ul>
+                                        <li>반드시 마녀공장 1:1문의게시판이나 고객센터 (02-6013-0855)로 접수해주세요.</li>
+                                        <li>교환, 반품, 환불은 공정거래위원회의 표준약관에 의거하여 제품이 배송일로부터 7일이내에 교환 및 환불이 가능합니다.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section recommend">
+                <div class="in">
+                    <h3>다른 고객이 함께 구매한 상품</h3>
+                    <ul class="rcmd_list cl">
+                        <li class="rcmd_prd">
+                            <div class="rcmd_top">
+                                <div class="rcmd_img">
+                                    <a href="#"><img src="images/new/new_5.png" alt="플로럴&프룻 글로우 오일 미스트"></a>
+                                </div>
+                                <span class="hrt rcmd_hrt"></span>
+                            </div>
+                            <div class="des rcmd_des">
+                                <p class="hash rcmd_hash">#피부광채</p>
+                                <p class="tit rcmd_tit"><a href="#">플로럴&프룻 글로우 오일 미스트</a></p>
+                                <p class="price rcmd_price">25,000원</p>
+                                <span class="sb rcmd_sb"></span>
+                            </div>
+                        </li>
+                        <li class="rcmd_prd">
+                            <div class="rcmd_top">
+                                <div class="rcmd_img">
+                                    <a href="#"><img src="images/new/new_6.png" alt="플로럴&프룻 글로우 오일"></a>
+                                </div>
+                                <span class="hrt rcmd_hrt"></span>
+                            </div>
+                            <div class="des rcmd_des">
+                                <div class="hash rcmd_hash">#피부광채</div>
+                                <div class="tit rcmd_tit"><a href="#">플로럴&프룻 글로우 오일</a></div>
+                                <div class="price rcmd_price">15,000원</div>
+                                <span class="sb rcmd_sb"></span>
+                            </div>
+                        </li>
+                        <li class="rcmd_prd">
+                            <div class="rcmd_top">
+                                <div class="rcmd_img">
+                                    <a href="#"><img src="images/new/new_7.png" alt="갈락토미 클리어스킨 패드"></a>
+                                </div>
+                                <span class="hrt rcmd_hrt"></span>
+                            </div>
+                            <div class="des rcmd_des">
+                                <div class="hash rcmd_hash">#노폐물제거 #각질제거</div>
+                                <div class="tit rcmd_tit"><a href="#">갈락토미 클리어스킨 패드</a></div>
+                                <div class="price rcmd_price">22,000원</div>
+                                <span class="sb rcmd_sb"></span>
+                            </div>
+                        </li>
+                        <li class="rcmd_prd">
+                            <div class="rcmd_top">
+                                <div class="rcmd_img">
+                                    <a href="#"><img src="images/new/new_8.png" alt="땡스베리 다슬링 티 마스크 시트"></a>
+                                </div>
+                                <span class="hrt rcmd_hrt"></span>
+                            </div>
+                            <div class="des rcmd_des">
+                                <div class="hash rcmd_hash">#피부생기 #찻잎추출물</div>
+                                <div class="tit rcmd_tit"><a href="#">땡스베리 다슬링 티 마스크 시트</a></div>
+                                <div class="price rcmd_price">20,000원</div>
+                                <span class="sb rcmd_sb"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+            <div class="border"></div>
+            <div class="in">
+                <div class="ftr_top_l">
+                    <ul class="ftr_nav">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">With</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">제휴문의</a></li>
+                        <li class="brand_site">
+                            <span>Brand Site &nbsp; &nbsp; &nbsp; &nbsp;<i class="fas fa-caret-down"></i></span>
+                            <ul class="ftr_lnb">
+                                <li><a href="index.html">마녀공장 스토어</a></li>
+                                <li><a href="https://manyofactory.co.kr/">마녀공장 글로벌 스토어</a></li>
+                                <li><a href="https://www.makeheal.com/">메이크힐</a></li>
+                                <li><a href="https://www.medihealshop.com/">메디힐</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ftr_top_r">
+                    <ul class="sm_list">
+                        <li><a href="#"><img src="images/icon_insta_b.png" alt="인스타그램"></a></li>
+                        <li><a href="#"><img src="images/icon_fb_b.png" alt="페이스북"></a></li>
+                        <li><a href="#"><img src="images/icon_youtube_b.png" alt="유튜브"></a></li>
+                    </ul>
+                </div>
+                <div class="ftr_btm">
+                    <p>(주)마녀공장 사업자 정보</p>
+                    <p>대표이사: 김현수, 황관익 | 주소: 서울특별시 강남구 논현동 231-16번지 팍스타워 15층, 마녀공장 | 사업자등록번호: 108-86-00365 사업자번호조회</p>
+                    <p>통신판매업신고번호: 제2018-서울강남-01835호 | 개인정보관리자: 한상범 | 메일: manyo_cs@manyo.co.kr고객센터: 02-6013-0855 | 팩스번호: 02-6280-0829</p>
+                    <p>마케팅·제휴 문의: manyofactory_mkt@manyo.co.kr | 국내 입점 문의: manyofactory_biz@manyo.co.kr | 해외 수출 문의(Overseas sales inquiry): manyo_sales@manyo.co.kr</p>
+                    <p>COPYRIGHT &copy; MANYOFACTORY ALL RIGHTS RESERVED.</p>
+                    <p>안전거래를 위해 (주)이니시스의 구매안전(에스크로)에 가입하여 서비스를 제공하고있습니다.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="side_btn">
+        <ul class="btn_list">
+            <li>
+                <a href="#">
+                    <img src="images/kakao_service.png" alt="카카오 상담">
+                </a>
+            </li>
+            <li class="history">
+                <a href="#" class="btn_circle">
+                    <span class="hide">최근 본 상품</span>
+                    <i class="fas fa-history"></i>
+                    <div class="history_win">
+                        <p><strong>최근 본 상품</strong></p>
+                        <p>?</p>
+                        <p>최근 본 상품이 없습니다.</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="btn_circle btn_top">
+                    <span class="hide">맨 위로 가기</span>
+                    <i class="fas fa-chevron-up"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

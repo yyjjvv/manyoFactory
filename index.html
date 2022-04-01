@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마녀공장</title>
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style/all.css" type="text/css">
+    <link rel="stylesheet" href="style/common.css" type="text/css">
+    <link rel="stylesheet" href="style/index.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="in">
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="마녀공장">
+                    </a>
+                </h1>
+                <nav class="nav">
+                    <h2 class="hide">Main Navigation</h2>
+                    <ul class="gnb cl">
+                        <li class="prd">
+                            <a href="#">Product</a>
+                            <div class="lnb prd_lnb cl">
+                                <ul class="lnb_list">
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="sub.html">NEW</a></li>
+                                    <li><a href="#">BEST</a></li>
+                                    <li class="sale"><a href="#">SALE</a></li>
+                                    <li><a href="#">BRAND</a></li>
+                                </ul>
+                                <ul class="lnb_list">
+                                    <li class="lnb_tit"><strong>유형별</strong></li>
+                                    <li><a href="#">클렌징</a></li>
+                                    <li><a href="#">스킨케어</a></li>
+                                    <li><a href="#">마스크/팩</a></li>
+                                    <li><a href="#">베이스메이크업</a></li>
+                                    <li><a href="#">향수/디퓨져</a></li>
+                                    <li><a href="#">라이프스타일</a></li>
+                                    <li><a href="#">미용소품</a></li>
+                                </ul>
+                                <ul class="lnb_list">
+                                    <li class="lnb_tit"><strong>라인별</strong></li>
+                                    <li><a href="#">미백</a></li>
+                                    <li><a href="#">주름탄력</a></li>
+                                    <li><a href="#">수분보습</a></li>
+                                    <li><a href="#">트러블</a></li>
+                                    <li><a href="#">장벽강화</a></li>
+                                    <li><a href="#">모공피지</a></li>
+                                    <li><a href="#">수부지</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Event</a></li>
+                        <li><a href="#">Review</a></li>
+                        <li><a href="#">m:Lab</a></li>
+                        <li class="cs">
+                            <a href="#">CS Center</a>
+                            <ul class="lnb cs_lnb">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Q&A</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="hdr_r cl">
+                    <div class="hdr_icon">
+                        <a href="#" class="search"><img src="images/hd_search.png" alt="검색" class="search"></a>
+                        <div class="srch_win">
+                            <form action="#">
+                                <fieldset>
+                                    <legend class="hide">검색어 입력</legend>
+                                    <label for="search" class="hide">검색어 입력</label>
+                                    <input type="text" title="검색어 입력" placeholder="퓨어 클렌징 오일" id="search">
+                                    <button class="btn_srch">
+                                        <span class="hide">검색</span>
+                                        <span class="icon_srch">
+                                            <img src="images/hd_search.png" alt="검색" class="search">
+                                        </span>
+                                    </button>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="hdr_icon">
+                        <a href="#" class="filter">
+                            <img src="images/hd_filter.png" alt="필터">
+                        </a>
+                        <div class="filter_win">
+                            <ul class="filter_list filter_b cl">
+                                <li class="filter_tit"><strong>브랜드</strong></li>
+                                <li><a href="#">마녀공장</a></li>
+                                <li><a href="#">자오담</a></li>
+                                <li><a href="#">바닐라부띠끄</a></li>
+                                <li><a href="#">100봄</a></li>
+                                <li><a href="#">노머시</a></li>
+                                <li><a href="#">아워비건</a></li>
+                            </ul>
+                            <ul class="filter_list filter_c cl">
+                                <li class="filter_tit"><strong>유형별</strong></li>
+                                <li><a href="#">클렌징</a></li>
+                                <li><a href="#">스킨케어</a></li>
+                                <li><a href="#">마스크/팩</a></li>
+                                <li><a href="#">베이스메이크업</a></li>
+                                <li><a href="#">향수/디퓨져</a></li>
+                                <li><a href="#">라이프스타일</a></li>
+                                <li><a href="#">미용소품</a></li>
+                            </ul>
+                            <ul class="filter_list filter_l cl">
+                                <li class="filter_tit"><strong>라인별</strong></li>
+                                <li><a href="#">미백</a></li>
+                                <li><a href="#">주름탄력</a></li>
+                                <li><a href="#">수분보습</a></li>
+                                <li><a href="#">트러블</a></li>
+                                <li><a href="#">장벽강화</a></li>
+                                <li><a href="#">모공피지</a></li>
+                                <li><a href="#">수부지</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="hdr_icon">
+                        <a href="#"><img src="images/hd_mypage.png" alt="로그인/마이페이지"></a>
+                    </div>
+                    <div class="hdr_icon">
+                        <a href="#" class="shopping_b"><img src="images/hd_shopping_bag.png" alt="쇼핑백"></a>
+                        <div class="sb_win">
+                            <p><strong>장바구니</strong></p>
+                            <p>!</p>
+                            <p>장바구니가 비어있습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="visual">
+            <div class="swiper mySwiper">
+                <ul class="slider swiper-wrapper">
+                    <li class="swiper-slide slide_2">
+                        <div class="in">
+                            <div class="vis_txt slide2_txt">
+                                <h2>더 좋아진 2월 혜택 믿고 더블로 가!</h2>
+                                <p>최대 49% OFF</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide slide_3">
+                        <div class="in">
+                            <div class="vis_txt slide3_txt">
+                                <h2>NEW</h2>
+                                <p>맑고 투명한 피부.</p>
+                                <p>하루 한 번, 하루하나</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide slide_4">
+                        <div class="in">
+                            <div class="vis_txt slide4_txt">
+                                <h2>다양한 어워즈를 휩쓴 퓨어 클렌징 오일</h2>
+                                <p>이번에도 많은 사랑을 받았습니다!</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="swiper-button-next next"></div>
+                <div class="swiper-button-prev prev"></div>
+                <div class="swiper-pagination page"></div>
+            </div>
+        </div>
+        <main id="contents">
+            <section class="section md">
+                <div class="in">
+                    <h3>MD's Pick:</h3>
+                    <ul class="md_list cl">
+                        <li class="md_prd">
+                            <div class="md_top">
+                                <span class="alert alert_b">B</span>
+                                <div class="md_img">
+                                    <a href="detail.html">
+                                        <img src="images/md1.png" alt="퓨어 클렌징 오일">
+                                    </a>
+                                </div>
+                                <span class="hrt md_hrt"></span>
+                            </div>
+                            <div class="des md_des">
+                                <div class="hash md_hash">#저자극 #블랙헤드관리</div>
+                                <div class="tit md_tit">
+                                    <a href="detail.html">퓨어 클렌징 오일 400ml</a>
+                                </div>
+                                <div class="price md_price">24,500원<small>49,000원</small></div>
+                                <div class="review md_review">★ 4.8 (3,314)</div>
+                                <span class="sb md_sb"></span>
+                            </div>
+                        </li>
+                        <li class="md_prd">
+                            <div class="md_top">
+                                <span class="alert alert_n">N</span>
+                                <div class="md_img">
+                                    <a href="#">
+                                        <img src="images/md2.png" alt="땡스베리 다슬링 티 마스크 시트">
+                                    </a>
+                                </div>
+                                <span class="hrt md_hrt"></span>
+                            </div>
+                            <div class="des md_des">
+                                <div class="hash md_hash">#피부생기 #찻잎추출물</div>
+                                <div class="tit md_tit">
+                                    <a href="#">땡스베리 다슬링 티 마스크 시트</a>
+                                </div>
+                                <div class="price md_price">20,000원</div>
+                                <div class="review md_review">★ 4.9 (76)</div>
+                                <span class="sb md_sb"></span>
+                            </div>
+                        </li>
+                        <li class="md_prd">
+                            <div class="md_top">
+                                <span class="alert alert_b">B</span>
+                                <div class="md_img">
+                                    <a href="#">
+                                        <img src="images/md3.png" alt="비피다 바이옴 아쿠아 베리어 크림">
+                                    </a>
+                                </div>
+                                <span class="hrt md_hrt"></span>
+                            </div>
+                            <div class="des md_des">
+                                <div class="hash md_hash">#속보습개선 #붉은기완화</div>
+                                <div class="tit md_tit">
+                                    <a href="#">비피다 바이옴 아쿠아 베리어 크림</a>
+                                </div>
+                                <div class="price md_price">14,700원<small>24,500원</small></div>
+                                <div class="review md_review">★ 4.7 (441)</div>
+                                <span class="sb md_sb"></span>
+                            </div>
+                        </li>
+                        <li class="md_prd">
+                            <div class="md_top">
+                                <span class="alert alert_b">B</span>
+                                <div class="md_img">
+                                    <a href="#">
+                                        <img src="images/md4.png" alt="블랙헤드 퓨어 클렌징 오일 킬패드">
+                                    </a>
+                                </div>
+                                <span class="hrt md_hrt"></span>
+                            </div>
+                            <div class="des md_des">
+                                <div class="hash md_hash">#블랙헤드관리 #피지감소</div>
+                                <div class="tit md_tit">
+                                    <a href="#">블랙헤드 퓨어 클렌징 오일 킬패드</a>
+                                </div>
+                                <div class="price md_price">10,000원<small>20,000원</small></div>
+                                <div class="review md_review">★ 4.9 (547)</div>
+                                <span class="sb md_sb"></span>
+                            </div>
+                        </li>
+                        <li class="md_prd">
+                            <div class="md_top">
+                                <span class="alert alert_n">N</span>
+                                <div class="md_img">
+                                    <a href="#">
+                                        <img src="images/md5.png" alt="갈락토미 클리어스킨 패드">
+                                    </a>
+                                </div>
+                                <span class="hrt md_hrt"></span>
+                            </div>
+                            <div class="des md_des">
+                                <div class="hash md_hash">#노폐물제거 #각질제거</div>
+                                <div class="tit md_tit">
+                                    <a href="#">갈락토미 클리어스킨 패드</a>
+                                </div>
+                                <div class="price md_price">22,000원</div>
+                                <div class="review md_review">★ 4.8 (452)</div>
+                                <span class="sb md_sb"></span>
+                            </div>
+                        </li>
+                        <li class="md_prd">
+                            <div class="md_top">
+                                <span class="alert alert_b">B</span>
+                                <div class="md_img">
+                                    <a href="#">
+                                        <img src="images/md6.png" alt="비피다 바이옴 콤플렉스 앰플 50ml">
+                                    </a>
+                                </div>
+                                <span class="hrt md_hrt"></span>
+                            </div>
+                            <div class="des md_des">
+                                <div class="hash md_hash">#장벽개선</div>
+                                <div class="tit md_tit"><a href="#">비피다 바이옴 콤플렉스 앰플 50ml</a></div>
+                                <div class="price md_price">22,700원<small>35,000원</small></div>
+                                <div class="review md_review">★ 4.8 (1,382)</div>
+                                <span class="sb md_sb"></span>
+                            </div>
+                        </li>
+                        <li class="md_prd">
+                            <div class="md_top">
+                                <span class="alert alert_n">N</span>
+                                <div class="md_img">
+                                    <a href="#">
+                                        <img src="images/md7.png" alt="플로럴&프룻 글로우 오일 미스트">
+                                    </a>
+                                </div>
+                                <span class="hrt md_hrt"></span>
+                            </div>
+                            <div class="des md_des">
+                                <p class="hash md_hash">#피부광채</p>
+                                <p class="tit md_tit">
+                                    <a href="#">플로럴&프룻 글로우 오일 미스트</a>
+                                </p>
+                                <p class="price md_price">25,000원</p>
+                                <p class="review md_review">★ 4.6 (420)</p>
+                                <span class="sb md_sb"></span>
+                            </div>
+                        </li>
+                        <li class="md_prd">
+                            <div class="md_top">
+                                <span class="alert alert_b">B</span>
+                                <div class="md_img">
+                                    <a href="#">
+                                        <img src="images/md8.png" alt="허브그린 샴푸">
+                                    </a>
+                                </div>
+                                <span class="hrt md_hrt"></span>
+                            </div>
+                            <div class="des md_des">
+                                <p class="hash md_hash">#자연유래성분 #진정</p>
+                                <p class="tit md_tit">
+                                    <a href="#">허브그린 샴푸</a>
+                                </p>
+                                <p class="price md_price">21,000원<small>35,000원</small></p>
+                                <p class="review md_review">★ 4.6 (422)</p>
+                                <span class="sb md_sb"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section new">
+                <div class="in cl">
+                    <h3>New:</h3>
+                    <ul class="n_list cl">
+                        <li class="n_prd">
+                            <div class="n_img">
+                                <a href="#">
+                                    <img src="images/new1.png" alt="갈락 화이트닝 비타 세럼 50ml">
+                                </a>
+                            </div>
+                            <div class="des n_des">
+                                <p class="hash n_hash">#투명피부 #생기있는피부</p>
+                                <p class="tit n_tit">
+                                    <a href="#">갈락 화이트닝 비타 세럼 50ml</a>
+                                </p>
+                                <p class="price n_price">25,000원</p>
+                                <span class="hrt n_hrt"></span>
+                                <span class="sb n_sb"></span>
+                            </div>
+                        </li>
+                        <li class="n_prd">
+                            <div class="n_img">
+                                <a href="#">
+                                    <img src="images/new2.png" alt="갈락 화이트닝 비타 토너 210ml">
+                                </a>
+                            </div>
+                            <div class="des n_des">
+                                <p class="hash n_hash">#각질정리 #피부밸런스유지</p>
+                                <p class="tit n_tit">
+                                    <a href="#">갈락 화이트닝 비타 토너 210ml</a>
+                                </p>
+                                <p class="price n_price">19,000원</p>
+                                <span class="hrt n_hrt"></span>
+                                <span class="sb n_sb"></span>
+                            </div>
+                        </li>
+                        <li class="n_prd">
+                            <div class="n_img">
+                                <a href="#">
+                                    <img src="images/new3.png" alt="블랙헤드&포어 크림">
+                                </a>
+                            </div>
+                            <div class="des n_des">
+                                <p class="hash n_hash">#블랙헤드관리 #뽀송뽀송한피부</p>
+                                <p class="tit n_tit">
+                                    <a href="#">블랙헤드&포어 크림</a>
+                                </p>
+                                <p class="price n_price">15,000원</p>
+                                <span class="hrt n_hrt"></span>
+                                <span class="sb n_sb"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section brand">
+                <div class="in">
+                    <h3>Brand:</h3>
+                    <div class="tab_wrap">
+                        <input type="radio" name="brand_tab" id="brd_tab1" checked>
+                        <input type="radio" name="brand_tab" id="brd_tab2">
+                        <input type="radio" name="brand_tab" id="brd_tab3">
+                        <input type="radio" name="brand_tab" id="brd_tab4">
+                        <input type="radio" name="brand_tab" id="brd_tab5">
+                        <input type="radio" name="brand_tab" id="brd_tab6">
+                        <div class="brd_btn">
+                            <h4 class="hide">Brand Navigation</h4>
+                            <label for="brd_tab1">manyo</label>
+                            <label for="brd_tab2">zaodam</label>
+                            <label for="brd_tab3">banila boutique</label>
+                            <label for="brd_tab4">100bon</label>
+                            <label for="brd_tab5">our vegan</label>
+                            <label for="brd_tab6">NO MERCY</label>
+                        </div>
+                        <div class="tab_vid">
+                            <ul class="video_list cl">
+                                <li class="youtube manyo">
+                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/h-_Y5WYdP2I"
+                                        title="YouTube video player"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </li>
+                                <li class="youtube zaodam">
+                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/HApSMJPaRe4"
+                                        title="YouTube video player"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </li>
+                                <li class="youtube banila">
+                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/WAYVnkmPrh8"
+                                        title="YouTube video player"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </li>
+                                <li class="youtube 100bon">
+                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/cNkcU6nI0mU"
+                                        title="YouTube video player"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </li>
+                                <li class="youtube vegan">
+                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/FUZ0OS5FgOU"
+                                        title="YouTube video player"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </li>
+                                <li class="youtube no_mer">
+                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/2Te0PisAI8Q"
+                                        title="YouTube video player"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section mlab">
+                <div class="in">
+                    <h3>m:Lab</h3>
+                    <ul class="mlab_list cl">
+                        <li class="mlab_con">
+                            <a href="#">
+                                <img src="images/mlab1.jpg" alt="마스크팩">
+                                <h4 class="mlab_txt">#피부 치트키<br>마스크팩 9</h4>
+                            </a>
+                        </li>
+                        <li class="mlab_con">
+                            <a href="#">
+                                <img src="images/mlab2.jpg" alt="토너">
+                                <h4 class="mlab_txt">나를 위해<br>토닥토닥-</h4>
+                            </a>
+                        </li>
+                        <li class="mlab_con">
+                            <a href="#">
+                                <img src="images/mlab3.jpg" alt="모공">
+                                <h4 class="mlab_txt">모공에<br>좋은 건 쓰다?</h4>
+                            </a>
+                        </li>
+                        <li class="mlab_con">
+                            <a href="#">
+                                <img src="images/mlab4.jpg" alt="텍스쳐">
+                                <h4 class="mlab_txt">좋은 텍스처<br>모음.zip</h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+            <div class="border"></div>
+            <div class="in">
+                <div class="ftr_top_l">
+                    <ul class="ftr_nav">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">With</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">제휴문의</a></li>
+                        <li class="brand_site">
+                            <span>Brand Site &nbsp; &nbsp; &nbsp; &nbsp;<i class="fas fa-caret-down"></i></span>
+                            <ul class="ftr_lnb">
+                                <li><a href="index.html">마녀공장 스토어</a></li>
+                                <li><a href="https://manyofactory.co.kr/">마녀공장 글로벌 스토어</a></li>
+                                <li><a href="https://www.makeheal.com/">메이크힐</a></li>
+                                <li><a href="https://www.medihealshop.com/">메디힐</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ftr_top_r">
+                    <ul class="sm_list">
+                        <li><a href="#"><img src="images/icon_insta_b.png" alt="인스타그램"></a></li>
+                        <li><a href="#"><img src="images/icon_fb_b.png" alt="페이스북"></a></li>
+                        <li><a href="#"><img src="images/icon_youtube_b.png" alt="유튜브"></a></li>
+                    </ul>
+                </div>
+                <div class="ftr_btm">
+                    <p>(주)마녀공장 사업자 정보</p>
+                    <p>대표이사: 김현수, 황관익 | 주소: 서울특별시 강남구 논현동 231-16번지 팍스타워 15층, 마녀공장 | 사업자등록번호: 108-86-00365 사업자번호조회</p>
+                    <p>통신판매업신고번호: 제2018-서울강남-01835호 | 개인정보관리자: 한상범 | 메일: manyo_cs@manyo.co.kr고객센터: 02-6013-0855 | 팩스번호:
+                        02-6280-0829</p>
+                    <p>마케팅·제휴 문의: manyofactory_mkt@manyo.co.kr | 국내 입점 문의: manyofactory_biz@manyo.co.kr | 해외 수출
+                        문의(Overseas sales inquiry): manyo_sales@manyo.co.kr</p>
+                    <p>COPYRIGHT &copy; MANYOFACTORY ALL RIGHTS RESERVED.</p>
+                    <p>안전거래를 위해 (주)이니시스의 구매안전(에스크로)에 가입하여 서비스를 제공하고있습니다.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="side_btn">
+        <ul class="btn_list">
+            <li>
+                <a href="#">
+                    <img src="images/kakao_service.png" alt="카카오 상담">
+                </a>
+            </li>
+            <li class="history">
+                <a href="#" class="btn_circle">
+                    <span class="hide">최근 본 상품</span>
+                    <i class="fas fa-history"></i>
+                    <div class="history_win">
+                        <p><strong>최근 본 상품</strong></p>
+                        <p>?</p>
+                        <p>최근 본 상품이 없습니다.</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="btn_circle btn_top">
+                    <span class="hide">맨 위로 가기</span>
+                    <i class="fas fa-chevron-up"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+/*Headline*/
+#visual {
+	position: relative;
+	margin-top: 90px;
+}
+#visual .vis_img {
+	width: 100%;
+	height: 400px;
+	background: url(../images/new/visual.jpg) no-repeat center top/cover;
+	position: relative;
+}
+#visual .vis_txt {
+	position: absolute;
+	left: 150px;
+	top: 160px;
+}
+#visual .vis_txt h2 {
+	font-size: 36px;
+	font-weight: 900;
+	margin-bottom: 30px;
+}
+#visual .vis_txt p {
+	font-size: 24px;
+	font-weight: 700;
+	color: green;
+}
+
+/*Category Title Area*/
+#contents .section {
+	padding: 80px 0 100px;
+	position: relative;
+}
+#contents .section .breadcrumbs {
+	color: var(--txt_body2);
+	position: absolute;
+	right: 0;
+	top: -20px;
+}
+#contents .section .breadcrumbs a {
+	color: #000;
+}
+#contents .section .breadcrumbs a:last-child {
+	color: var(--main);
+	font-weight: 700;
+}
+#contents .section h3 {
+	font-size: 30px;
+	font-weight: 900;
+	margin-bottom: 50px;
+}
+#contents .section .product_array {
+	margin-bottom: 50px;
+}
+#contents .section .quantity {
+	float: left;
+	font-weight: 700;
+	font-size: 18px;
+}
+#contents .section .array_order {
+	float: right;
+	width: 120px;
+}
+#contents .section .array_order select {
+	border: 0;
+	outline: 0;
+	background: transparent;
+	font-size: 16px;
+}
+
+/*Category_New Product*/
+.new .new_list li {
+	float: left;
+	width: 319px;
+	margin-right: 30px;
+	margin-bottom: 80px;
+	position: relative;
+}
+.new .new_list li:nth-child(4n) {
+	margin-right: 0px;
+}
+.new .new_list li .new_top {
+	position: relative;
+	margin-bottom: 30px;
+}
+.new .new_list li .new_img {
+	width: 319px;
+	height: 319px;
+	border-radius: 100px;
+	overflow: hidden;
+}
+.new .new_list li .new_img img {
+	transition: 0.5s;
+}
+.new .new_list li .new_img:hover img {
+	transform: scale(1.05);
+}
+.new .new_list li .new_price {
+	margin-bottom: 0;
+}
+.new .new_list li .new_hrt:hover {
+	background: url(../images/heart_fill.png) no-repeat;
+}
+.new .new_list li .new_sb:hover {
+	background: url(../images/prdct_sb_b.png) no-repeat;
+}
